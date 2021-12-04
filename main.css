@@ -144,7 +144,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
-        top: 54%;
+        top: 60%;
         left: 34%;
         transform: translate(-50%, -50%);
         margin: 60px;

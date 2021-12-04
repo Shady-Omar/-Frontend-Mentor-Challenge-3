@@ -1,0 +1,237 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    width: 1080px;
+    height: 446px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 9px;
+    margin: auto 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 20px 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .info {
+    width: 360px;
+    margin-left: 60px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container .info .text {
+    position: absolute;
+    top: 12%;
+}
+
+.container .info .text h1 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+}
+
+.container .info .text h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.container .info .text p {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+.container .info .stats {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    bottom: 17%;
+}
+
+.container .info .stats span:not(:last-child) {
+    margin-right: 85px;
+}
+
+.container .info .stats #comp {
+    position: relative;
+}
+
+.container .info .stats #comp::after {
+    content: 'COMPANIES';
+    position: absolute;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    left: 0;
+    bottom: -75%;
+    letter-spacing: 0.5px;
+}
+
+.container .info .stats #temp {
+    position: relative;
+}
+
+.container .info .stats #temp::after {
+    content: 'TEMPLATES';
+    position: absolute;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    left: 0;
+    bottom: -75%;
+    letter-spacing: 0.5px;
+}
+
+.container .info .stats #query {
+    position: relative;
+}
+
+.container .info .stats #query::after {
+    content: 'QUERIES';
+    position: absolute;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    left: 0;
+    bottom: -75%;
+    letter-spacing: 0.5px;
+}
+
+.container .image {
+    position: relative;
+}
+
+.container .image img {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.container .image img:nth-of-type(2) {
+    display: none;
+}
+
+.container .image .overlay {
+    width: 540px;
+    height: 446px;
+    position: absolute;
+    background-color: hsl(277, 64%, 61%);
+    top: 0;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 325px;
+        height: 770px;
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container .info {
+        position: absolute;
+        top: 34%;
+        left: -14%;
+        width: 300px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container .info .text {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .container .info .text h1 {
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        font-size: 29px;
+    }
+
+    .container .info .text p {
+        width: 270px;
+        position: absolute;
+        left: 5%;
+        top: 80%;
+        font-size: 15px;
+    }
+
+
+    .container .info .stats {
+        position: absolute;
+        top: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 13px;
+    }
+
+    .container .info .stats span:not(:last-child) {
+        margin-right: 5px;
+        margin-bottom: 37px;
+    }
+
+    .container .info .stats span {
+        left: 174%;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+    .container .info .stats #comp::after {
+        left: -10px;
+    }
+
+    .container .info .stats #temp::after {
+        left: -15px;
+    }
+
+    .container .info .stats #query::after {
+        left: 0px;
+    }
+
+    .container .image {
+        position: absolute;
+        top: 0;
+    }
+
+    .container .image img {
+        display: none;
+    }
+
+    .container .image img:nth-of-type(2) {
+        display: block;
+        width: 325px;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .container .image .overlay {
+        width: 325px;
+        height: 239px;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}

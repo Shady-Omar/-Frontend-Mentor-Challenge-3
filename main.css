@@ -145,8 +145,9 @@ body {
         flex-direction: column-reverse;
         position: absolute;
         top: 54%;
-        left: 45%;
+        left: 40%;
         transform: translate(-50%, -50%);
+        margin: 40px;
     }
 
     .container .info {
